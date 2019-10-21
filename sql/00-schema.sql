@@ -8,7 +8,7 @@ CREATE TABLE `pages` (
 );
 
 CREATE TABLE `posts` (
-  `post_id` int(11) NOT NULL,
+  `post_id` int(11) NOT NULL AUTO_INCREMENT,
   `date` datetime DEFAULT NULL,
   `visible` int(11) DEFAULT '14',
   `title` varchar(30) DEFAULT NULL,
