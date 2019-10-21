@@ -10,8 +10,8 @@ if (isset($_POST["title"]) && isset($_POST["visible"]) && isset($_POST["content"
     // access: 4 (Editor)
     // access: 8 (Administrator)
 
-    // Make sure editor permission is available
-    if (isset($_SESSION) && isset($_SESSION["access"]) && ($_SESSION["access"] & 4)) {
+    // Make sure administrator or editor permission is available
+    if (isset($_SESSION) && isset($_SESSION["access"]) && ($_SESSION["access"] & 12)) {
 
         $db = mysqli_connect($DB_HOSTNAME, $DB_USERNAME, $DB_PASSWORD, $DB_DATABASE);
 
