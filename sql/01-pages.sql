@@ -1,6 +1,6 @@
 INSERT INTO `pages` VALUES (200,8,'about',NULL, '
-<h3>Wycked Wiki</h3>
-<h4>Version <?php echo "$VERSION"?></h4>
+<h3><?php echo $WYCKED_TITLE; ?></h3>
+<h5>Version <?php echo $WYCKED_VERSION; ?></h5>
 <a href="page.php?page=_diags">Diagnostics</a>
 ');
 

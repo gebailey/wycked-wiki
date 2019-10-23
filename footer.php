@@ -1,8 +1,8 @@
 <div class="footerdiv">
 
 <p class="copyright">
-Copyright &copy; 1994, Wacky Wild Wycked Wiki WebWorks, Inc.  All Rights Reserved.
-<br>Version <?php echo $VERSION ?>
+<?php echo $WYCKED_FOOTER; ?>
+<br>Version <?php echo $WYCKED_VERSION ?>
 </p>
 
 <p class="admins">

@@ -31,7 +31,7 @@ else
 <!DOCTYPE html>
 <html>
 <head>
-<title>Wycked Wiki - Login</title>
+<title><?php echo $WYCKED_TITLE; ?> - Login</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body onLoad="document.loginForm.username.focus()">

@@ -2,7 +2,7 @@
 
 <table><tr>
 
-<td><a href=".">Wycked Wiki</a></td>
+<td><a href="."><?php echo $WYCKED_TITLE; ?></a></td>
 
 <td class="userinfo">
 <?php

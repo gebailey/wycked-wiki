@@ -42,7 +42,7 @@ else
 <!DOCTYPE html>
 <html>
 <head>
-<title>Wycked Wiki</title>
+<title><?php echo $WYCKED_TITLE; ?></title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
