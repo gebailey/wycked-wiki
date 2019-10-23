@@ -10,6 +10,8 @@ Insecure and minimalistic PHP-MySQL wiki system
 
 # Setup
 
+* Copy the contents of the `php` directory to a directory under DocumentRoot
+
 * Edit `config.php` as required
 
 * Load sample SQL data:
