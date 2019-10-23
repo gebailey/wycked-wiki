@@ -35,9 +35,11 @@ Common settings for the <i>visible</i> field:
 
 <h4>Pages</h4>
 <p>
-Pages can either be references to php source files, or served directly from MySQL.
-The <b>title</b> of the page is used to title the button that is shown to the
-user, and the buttons are sorted by <b>page_id</b>.
+Pages can either be references to php source files, or served directly from
+MySQL.  The <b>title</b> of the page is used to title the button that is shown
+to the user, and the buttons are sorted by <b>page_id</b>.  If the title starts
+with an underscore, then the button is not shown, but the page is still
+accessible to the user via a direct link.
 
 <h4>Posts</h4>
 <p>

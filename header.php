@@ -50,7 +50,7 @@ $db = mysqli_connect($DB_HOSTNAME, $DB_USERNAME, $DB_PASSWORD, $DB_DATABASE);
 $result = mysqli_query($db, "select * from pages order by page_id");
 
 while ($row = mysqli_fetch_assoc($result)) {
-    if ($access & $row["visible"]) {
+    if (($access & $row["visible"]) && (substr($row["title"], 0, 1) !== "_")) {
         if (is_null($row["file"])) {
             // content comes from pages table
             printf('<td class="menuitem"><a href="page.php?page=%s">%s</a></td>',
