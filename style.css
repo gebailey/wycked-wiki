@@ -90,6 +90,11 @@ body {
 	padding: 10px 25px 10px 25px;
 }
 
+.bodydiv a {
+	color: #268BD2;
+	text-decoration: none
+}
+
 .bodydiv table {
 	width: 100%;
 }
@@ -155,5 +160,36 @@ body {
 .logindiv input[type=password] {
 	border: 2px solid #101010;
 	padding: 5px 5px 5px 5px;
+}
+
+.displayusers {
+	color: #93A1A1;
+	font-size: 12pt;
+	padding: 5px 25px 5px 25px;
+}
+
+.displayusers th {
+	text-align: left;
+	font-weight: bold;
+	min-width: 150px;
+	padding: 5px 0px 5px 0px;
+}
+
+.displayusers a {
+	color: #DC322F;
+	font-weight: bold;
+	padding: 5px 0px 5px 50px;
+	text-decoration: none
+}
+
+.adduser {
+	color: #859900;
+	font-size: 12pt;
+	font-weight: bold;
+	padding: 5px 25px 5px 25px;
+}
+
+.adduser td {
+	padding: 2px 25px 2px 25px;
 }
 

@@ -1,6 +1,12 @@
-INSERT INTO `pages` VALUES (200,8,'about',NULL, '<h3>Wycked Wiki</h3><h4>Version <?php echo "$VERSION"?></h4>');
+INSERT INTO `pages` VALUES (200,8,'about',NULL, '
+<h3>Wycked Wiki</h3>
+<h4>Version <?php echo "$VERSION"?></h4>
+<a href="page.php?page=_diags">Diagnostics</a>
+');
 
-INSERT INTO `pages` VALUES (210,8,'diags',NULL, '<?php echo "<pre>"; system("top -b -n 1"); echo "</pre>";');
+INSERT INTO `pages` VALUES (210,8,'_diags',NULL, '
+<?php echo "<pre>"; system("top -b -n 1"); echo "</pre>";
+');
 
 INSERT INTO `pages` VALUES (300,12,'docs',NULL,'
 <h2>Introduction</h2>
@@ -53,10 +59,10 @@ Several features are as yet unimplemented:
 <ul>
 <li>Editing / deleting posts
 <li>Creating / editing / deleting pages
-<li>Creating / deleting users
 </ul>
 ');
 
+INSERT INTO `pages` VALUES (400,8,'users','users.php',NULL);
 INSERT INTO `pages` VALUES (700,12,'new post','posts.php',NULL);
 INSERT INTO `pages` VALUES (800,1,'login','login.php',NULL);
 INSERT INTO `pages` VALUES (900,14,'logout','logout.php',NULL);
