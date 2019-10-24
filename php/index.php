@@ -1,3 +1,4 @@
+<?php require_once("config.php"); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,7 +7,6 @@
 </head>
 <body>
 <?php
-require_once("config.php");
 session_start();
 
 include("header.php");
