@@ -1,0 +1,40 @@
+# Build steps
+
+This builds a container with PHP and Apache HTTPd on an Amazon Linux 2 base.
+
+Environment variables can be set at run-time to configure the MySQL database to
+use (see below).
+
+The `docker build` command must be run from the parent directory, because the
+`Dockerfile` references files outside of this tree:
+
+```
+cd ..
+docker build -f docker/Dockerfile -t wycked .
+
+```
+
+# Running the container
+
+```
+export DB_HOSTNAME="mysqlserver.example.com"
+export DB_USERNAME="wycked-dbuser"
+export DB_PASSWORD="wycked-dbpass"
+export DB_DATABASE="wycked"
+
+docker run --rm -d -p 8080:80 \
+    --env DB_HOSTNAME="${DB_HOSTNAME}" \
+    --env DB_USERNAME="${DB_USERNAME}" \
+    --env DB_PASSWORD="${DB_PASSWORD}" \
+    --env DB_DATABASE="${DB_DATABASE}" \
+    wycked
+
+```
+
+# Troubleshooting
+
+```
+docker run --rm -it wycked /bin/bash
+
+```
+
